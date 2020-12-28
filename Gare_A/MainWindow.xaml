@@ -1,0 +1,31 @@
+﻿<Window x:Class="Gare_A.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gare_A"
+        mc:Ignorable="d"
+        Title="Gare A" Height="650" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Source ="/Ressources/Vibrant-M-Tech-01-RGB.png" HorizontalAlignment="Left" Height="79" Margin="92,531,0,0" VerticalAlignment="Top" Width="163"/>
+        <Image Source ="/Ressources/logo_rich_red-en-row.png" HorizontalAlignment="Left" Height="61" Margin="820,10,0,0" VerticalAlignment="Top" Width="164"/>
+        <TabControl HorizontalAlignment="Left" Height="472" Margin="10,54,0,0" VerticalAlignment="Top" Width="974">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <TextBox x:Name="TBX_Login" TabIndex ="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="357,548,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="272,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Mot de passe"/>
+        <TextBlock HorizontalAlignment="Left" Margin="272,550,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Login"/>
+        <PasswordBox x:Name="TBX_MDP" TabIndex ="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="357,578,0,0" Height="23"/>
+        <Button x:Name="BTN_MDP" Content="Vérifier" HorizontalAlignment="Left" Height="23" Margin="498,578,0,0" VerticalAlignment="Top" Width="56" Click="BTN_MDP_Click"/>
+        <CheckBox x:Name="CKB_Menu" Content="Mode choix resp&#xA;au démarrage" HorizontalAlignment="Left" Height="36" Margin="498,542,0,0" VerticalAlignment="Top" Width="158"/>
+        <Button x:Name="BTN_TestConfig" Content="Tester configuration" HorizontalAlignment="Left" Height="23" Margin="757,573,0,0" VerticalAlignment="Top" Width="135" Click="BTN_TestConfig_Click"/>
+    </Grid>
+</Window>
